@@ -22,7 +22,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         spriteRenderer.flipX = rb.linearVelocity.x < 0;
 
 
-        if (moveHorizontal != 0){
+        if (moveHorizontal != 0)
+        {
             animator.SetBool("isMoving", true);
         }
         else
