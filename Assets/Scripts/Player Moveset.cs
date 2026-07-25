@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+    public Timer timer;
 
     private void Start()
     {
@@ -49,6 +51,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
         else
         {
             animator.SetBool("isUp", false);
+        }
+
+        if (timer.remainingTime <= 0)
+        {
+            animator.SetBool("isCought", true);
+            animator.SetBool("isUp", false);
+            animator.SetBool("isMoving", false);
+            animator.SetBool("isDown", false);
+
+            speed = 0;
+
         }
     }
 }

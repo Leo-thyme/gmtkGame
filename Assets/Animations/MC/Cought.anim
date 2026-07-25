@@ -22,9 +22,9 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: -2561289929380312947, guid: fc5f2ca1199e5bd41937e7e07628df60, type: 3}
-    - time: 0.21666667
+    - time: 0.43333334
       value: {fileID: -1192689070, guid: fc5f2ca1199e5bd41937e7e07628df60, type: 3}
-    - time: 0.46666667
+    - time: 0.9166667
       value: {fileID: 493439490, guid: fc5f2ca1199e5bd41937e7e07628df60, type: 3}
     - time: 1.3333334
       value: {fileID: 493439490, guid: fc5f2ca1199e5bd41937e7e07628df60, type: 3}
