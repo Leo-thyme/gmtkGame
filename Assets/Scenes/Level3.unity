@@ -483,7 +483,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294961648
-  m_fontColor: {r: 0.94210976, g: 0.91509426, b: 1, a: 1}
+  m_fontColor: {r: 0.99607843, g: 0.9137255, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1817,6 +1817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 975969485}
   image: {fileID: 975969486}
+  boosterTimer: 0
   player: {fileID: 595355453}
 --- !u!95 &975969485
 Animator:
@@ -1945,7 +1946,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294961648
-  m_fontColor: {r: 0.94210976, g: 0.91509426, b: 1, a: 1}
+  m_fontColor: {r: 0.99607843, g: 0.9137255, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2358,6 +2359,8 @@ MonoBehaviour:
   countdownText: {fileID: 1539756136}
   remainingTime: 120
   animator: {fileID: 595355454}
+  player: {fileID: 0}
+  UIbooster1: {fileID: 0}
 --- !u!114 &1497793259
 MonoBehaviour:
   m_ObjectHideFlags: 0

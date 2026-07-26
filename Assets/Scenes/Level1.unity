@@ -308,6 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 49840032}
   image: {fileID: 49840033}
+  boosterTimer: 0
   player: {fileID: 1439797964}
 --- !u!1 &197270866
 GameObject:
@@ -477,8 +478,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294961648
-  m_fontColor: {r: 0.94210976, g: 0.91509426, b: 1, a: 1}
+    rgba: 4294961662
+  m_fontColor: {r: 0.99607843, g: 0.9137255, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3337,6 +3338,8 @@ MonoBehaviour:
   countdownText: {fileID: 1367386709}
   remainingTime: 120
   animator: {fileID: 1439797970}
+  player: {fileID: 0}
+  UIbooster1: {fileID: 0}
 --- !u!1 &732000104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4223,8 +4226,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294961648
-  m_fontColor: {r: 0.94210976, g: 0.91509426, b: 1, a: 1}
+    rgba: 4294961662
+  m_fontColor: {r: 0.99607843, g: 0.9137255, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
