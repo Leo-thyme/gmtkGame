@@ -129,8 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 242720485}
   - component: {fileID: 242720484}
-  - component: {fileID: 242720483}
   - component: {fileID: 242720482}
+  - component: {fileID: 242720486}
   m_Layer: 1
   m_Name: Escape
   m_TagString: Boost
@@ -174,18 +174,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.5}
   m_Radius: 0.5034723
---- !u!114 &242720483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242720481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788864b1063dbaa49b143a8f5a11df9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Final
 --- !u!212 &242720484
 SpriteRenderer:
   serializedVersion: 2
@@ -260,6 +248,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &242720486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242720481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7508420cd7fe1b848908d24b4e254edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Level3
 --- !u!1 &348406161
 GameObject:
   m_ObjectHideFlags: 0
