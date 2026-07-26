@@ -8,6 +8,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
     public Timer timer;
+    public bool BoosterActive;
 
     private void Start()
     {
@@ -62,6 +63,25 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
             speed = 0;
 
+        }
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Boost")
+        {
+            
+            BoosterActive = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Boost")
+        {
+            
+            BoosterActive = false;
         }
     }
 }
