@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 42ca85ff0efcf6b4e8e038c37469b292
+guid: e55b2791e42d7824c8011c2d9c97929c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4398558087189636285
-    second: cycle_0
+      213: 7223627242472554488
+    second: itemact_0
   - first:
-      213: -8035901728186767280
-    second: cycle_1
+      213: 835835797288121154
+    second: itemact_1
   - first:
-      213: -5684573054851157797
-    second: cycle_2
+      213: -6831660005160857060
+    second: itemact_2
   - first:
-      213: 6957414719175511775
-    second: cycle_3
+      213: -4192189590382714935
+    second: itemact_3
+  - first:
+      213: 6889386012753261013
+    second: itemact_4
+  - first:
+      213: 872150299896924560
+    second: itemact_5
+  - first:
+      213: 4855330421672486718
+    second: itemact_6
+  - first:
+      213: -2283131023771294232
+    second: itemact_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cycle_0
+      name: itemact_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34bd32969be25f2c0800000000000000
-      internalID: -4398558087189636285
+      spriteID: 8ff396164ba7f3460800000000000000
+      internalID: 7223627242472554488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cycle_1
+      name: itemact_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243f9ebaa3c799b00800000000000000
+      internalID: 835835797288121154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itemact_2
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 058ea7944fdba7090800000000000000
-      internalID: -8035901728186767280
+      spriteID: c12d426cb611131a0800000000000000
+      internalID: -6831660005160857060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cycle_2
+      name: itemact_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfd52a57c952d5c0800000000000000
+      internalID: -4192189590382714935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itemact_4
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd0f6ddbce65c11b0800000000000000
-      internalID: -5684573054851157797
+      spriteID: 5d1f3bab3140c9f50800000000000000
+      internalID: 6889386012753261013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cycle_3
+      name: itemact_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 80
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdec78b33d3bd8060800000000000000
-      internalID: 6957414719175511775
+      spriteID: 0994b10b3108a1c00800000000000000
+      internalID: 872150299896924560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itemact_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37afea3b49916340800000000000000
+      internalID: 4855330421672486718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: itemact_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e520703e60b050e0800000000000000
+      internalID: -2283131023771294232
       vertices: []
       indices: 
       edges: []
@@ -200,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8112377c01692e848a52824b1e1c4963
+    spriteID: 291e7ebe44b010b458e851ac6c3ac21a
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cycle_0: -4398558087189636285
-      cycle_1: -8035901728186767280
-      cycle_2: -5684573054851157797
-      cycle_3: 6957414719175511775
+      itemact_0: 7223627242472554488
+      itemact_1: 835835797288121154
+      itemact_2: -6831660005160857060
+      itemact_3: -4192189590382714935
+      itemact_4: 6889386012753261013
+      itemact_5: 872150299896924560
+      itemact_6: 4855330421672486718
+      itemact_7: -2283131023771294232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
