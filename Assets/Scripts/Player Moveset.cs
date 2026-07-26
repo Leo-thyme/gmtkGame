@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+    public Timer timer;
+    public bool BoosterActive;
 
     private void Start()
     {
@@ -22,7 +25,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         spriteRenderer.flipX = rb.linearVelocity.x < 0;
 
 
-        if (moveHorizontal != 0){
+        if (moveHorizontal != 0)
+        {
             animator.SetBool("isMoving", true);
         }
         else
@@ -48,6 +52,36 @@ public class NewMonoBehaviourScript : MonoBehaviour
         else
         {
             animator.SetBool("isUp", false);
+        }
+
+        if (timer.remainingTime <= 0)
+        {
+            animator.SetBool("isCought", true);
+            animator.SetBool("isUp", false);
+            animator.SetBool("isMoving", false);
+            animator.SetBool("isDown", false);
+
+            speed = 0;
+
+        }
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Boost")
+        {
+            
+            BoosterActive = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Boost")
+        {
+            
+            BoosterActive = false;
         }
     }
 }

@@ -2,8 +2,9 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Boost
   layers:
   - Default
   - TransparentFX
@@ -11,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - tt
+  - tt
   - 
   - 
   - 
@@ -41,3 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3328582121
+    locked: 0
+  - name: player, boosters
+    uniqueID: 1577966659
+    locked: 0
+  - name: behind walls
+    uniqueID: 2422020697
+    locked: 0
+  - name: walls
+    uniqueID: 2749590605
+    locked: 0
+  - name: in frint of walls 1
+    uniqueID: 977089145
+    locked: 0
+  - name: UI
+    uniqueID: 3754495945
+    locked: 0
+  m_RenderingLayers:
+  - Default
