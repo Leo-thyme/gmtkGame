@@ -10,7 +10,7 @@ public class BoosterScript : MonoBehaviour
     public Animator animator;
     public UnityEngine.UI.Image image;
     float TimerBooster = 0;
-    float boosterTimer = 0f;
+    public float boosterTimer = 0f;
     bool boosterActive = false;
 
     NewMonoBehaviourScript playerMoveset;
@@ -46,6 +46,7 @@ public class BoosterScript : MonoBehaviour
 
         if (boosterActive == true)
         {
+            
             boosterTimer += Time.deltaTime;
             animator.SetBool("End of animation", false);
 
@@ -72,6 +73,7 @@ public class BoosterScript : MonoBehaviour
         {
             image.enabled = false;
             animator.SetBool("End of animation", true);
+           
         }
 
         
