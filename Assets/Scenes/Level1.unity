@@ -3238,7 +3238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &709231558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3338,8 +3338,8 @@ MonoBehaviour:
   countdownText: {fileID: 1367386709}
   remainingTime: 120
   animator: {fileID: 1439797970}
-  player: {fileID: 0}
-  UIbooster1: {fileID: 0}
+  player: {fileID: 1439797964}
+  UIbooster1: {fileID: 49840030}
 --- !u!1 &732000104
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,9 +8159,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2044551860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c27862cafb53d144b7d082916b149c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 788864b1063dbaa49b143a8f5a11df9a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Level2
+  m_EditorClassIdentifier: Assembly-CSharp::Final
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

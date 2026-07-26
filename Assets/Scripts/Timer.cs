@@ -1,6 +1,7 @@
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Timer : MonoBehaviour
@@ -42,24 +43,19 @@ public class Timer : MonoBehaviour
                 
             }
         }
-        else
+        
+        
+        if (remainingTime <= 0)
         {
-            if(scriptBooster1.boosterTimer >= 1)
-            {
-                boosterActive = true;
-            }
-            else
-            {
-                boosterActive = false;
+            SceneManager.LoadScene("GameOverScene");
 
-            }
         }
 
 
 
 
 
-            int minutes = Mathf.FloorToInt(remainingTime / 60);
+        int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         countdownText.text = string.Format("{0:00}:{1:00}",minutes, seconds);
 

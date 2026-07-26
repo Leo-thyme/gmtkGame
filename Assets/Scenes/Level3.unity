@@ -4284,10 +4284,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1539756136}
-  remainingTime: 120
+  remainingTime: 300
   animator: {fileID: 595355454}
-  player: {fileID: 0}
-  UIbooster1: {fileID: 0}
+  player: {fileID: 595355453}
+  UIbooster1: {fileID: 975969482}
 --- !u!114 &1497793259
 MonoBehaviour:
   m_ObjectHideFlags: 0

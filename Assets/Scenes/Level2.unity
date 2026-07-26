@@ -257,9 +257,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 242720481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7508420cd7fe1b848908d24b4e254edc, type: 3}
+  m_Script: {fileID: 11500000, guid: 788864b1063dbaa49b143a8f5a11df9a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Level3
+  m_EditorClassIdentifier: Assembly-CSharp::Final
 --- !u!1 &348406161
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,10 +2948,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1539756136}
-  remainingTime: 120
+  remainingTime: 180
   animator: {fileID: 595355454}
-  player: {fileID: 0}
-  UIbooster1: {fileID: 0}
+  player: {fileID: 595355453}
+  UIbooster1: {fileID: 975969482}
 --- !u!114 &1497793259
 MonoBehaviour:
   m_ObjectHideFlags: 0
