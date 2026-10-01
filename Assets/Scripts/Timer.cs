@@ -10,43 +10,25 @@ public class Timer : MonoBehaviour
     public float remainingTime;
     public Animator animator;
     
-    public GameObject player;
+
+    public PlayerMoveset dzemikBoosterActive;
     
+    public BoosterScript scriptBooster1;
+    // inspector value (iv)
 
-    NewMonoBehaviourScript dzemikBoosterActive;
-    bool boosterActive = false;
-
-    public GameObject UIbooster1;
-    BoosterScript scriptBooster1;
-    float boosterTimer = 0f;
-
-    public void Awake()
-    {
-        dzemikBoosterActive = player.GetComponent<NewMonoBehaviourScript>();
-
-        scriptBooster1 = UIbooster1.GetComponent<BoosterScript>(); 
-
-    }
+    
 
     private void Update()
     {
-        if (dzemikBoosterActive.BoosterActive == false)
+        if (dzemikBoosterActive.BoosterActive) return;
+        
+        if (remainingTime > 0)
         {
-            if (remainingTime > 0)
-            {
-                remainingTime -= Time.deltaTime;
-            }
-            else if (remainingTime < 0)
-            {
-                remainingTime = 0;
-
-                
-            }
+            remainingTime -= Time.deltaTime;
         }
-        
-        
-        if (remainingTime <= 0)
+        else
         {
+            remainingTime = 0;
             SceneManager.LoadScene("GameOverScene");
 
         }

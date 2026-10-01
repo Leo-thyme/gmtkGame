@@ -7,6 +7,7 @@ public class DzemCollect : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
     public CircleCollider2D colliderr;
+    public PlayerMoveset playerMoveset;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class DzemCollect : MonoBehaviour
         if (other.tag == "Player")
         {
             animator.SetBool("isCollected", true);
-            
+            playerMoveset.BoosterActive = true;
         }
     }
 
@@ -30,6 +31,7 @@ public class DzemCollect : MonoBehaviour
             spriteRenderer.gameObject.SetActive(false);
         }
     }
+
 
 }
 

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Animations;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerMoveset : MonoBehaviour
 {
     public float speed = 5f;
     private Rigidbody2D rb;
@@ -67,21 +67,5 @@ public class NewMonoBehaviourScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Boost")
-        {
-            
-            BoosterActive = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Boost")
-        {
-            
-            BoosterActive = false;
-        }
-    }
+   
 }

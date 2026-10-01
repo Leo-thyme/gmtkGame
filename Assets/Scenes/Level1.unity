@@ -309,7 +309,7 @@ MonoBehaviour:
   animator: {fileID: 49840032}
   image: {fileID: 49840033}
   boosterTimer: 0
-  player: {fileID: 1439797964}
+  playerMoveset: {fileID: 1439797969}
 --- !u!1 &197270866
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,6 +3096,7 @@ MonoBehaviour:
   animator: {fileID: 669202612}
   spriteRenderer: {fileID: 669202613}
   colliderr: {fileID: 669202615}
+  playerMoveset: {fileID: 0}
 --- !u!1 &703126628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,8 +3339,8 @@ MonoBehaviour:
   countdownText: {fileID: 1367386709}
   remainingTime: 120
   animator: {fileID: 1439797970}
-  player: {fileID: 1439797964}
-  UIbooster1: {fileID: 49840030}
+  dzemikBoosterActive: {fileID: 1439797969}
+  scriptBooster1: {fileID: 49840035}
 --- !u!1 &732000104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,6 +3585,7 @@ MonoBehaviour:
   animator: {fileID: 1036125582}
   spriteRenderer: {fileID: 1036125583}
   colliderr: {fileID: 1036125580}
+  playerMoveset: {fileID: 1439797969}
 --- !u!95 &1036125582
 Animator:
   serializedVersion: 7

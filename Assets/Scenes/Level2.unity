@@ -970,6 +970,7 @@ MonoBehaviour:
   animator: {fileID: 749519180}
   spriteRenderer: {fileID: 749519181}
   colliderr: {fileID: 749519178}
+  playerMoveset: {fileID: 595355457}
 --- !u!95 &749519180
 Animator:
   serializedVersion: 7
@@ -1289,6 +1290,7 @@ MonoBehaviour:
   animator: {fileID: 792485991}
   spriteRenderer: {fileID: 792485992}
   colliderr: {fileID: 792485989}
+  playerMoveset: {fileID: 595355457}
 --- !u!95 &792485991
 Animator:
   serializedVersion: 7
@@ -2272,7 +2274,7 @@ MonoBehaviour:
   animator: {fileID: 975969485}
   image: {fileID: 975969486}
   boosterTimer: 0
-  player: {fileID: 595355453}
+  playerMoveset: {fileID: 595355457}
 --- !u!95 &975969485
 Animator:
   serializedVersion: 7
@@ -2404,6 +2406,7 @@ MonoBehaviour:
   animator: {fileID: 1252164641}
   spriteRenderer: {fileID: 1252164642}
   colliderr: {fileID: 1252164639}
+  playerMoveset: {fileID: 595355457}
 --- !u!95 &1252164641
 Animator:
   serializedVersion: 7
@@ -2494,7 +2497,7 @@ Transform:
   m_GameObject: {fileID: 1252164638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.53, y: -11.46, z: 0}
+  m_LocalPosition: {x: 8.54, y: -17.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2950,8 +2953,8 @@ MonoBehaviour:
   countdownText: {fileID: 1539756136}
   remainingTime: 180
   animator: {fileID: 595355454}
-  player: {fileID: 595355453}
-  UIbooster1: {fileID: 975969482}
+  dzemikBoosterActive: {fileID: 595355457}
+  scriptBooster1: {fileID: 975969484}
 --- !u!114 &1497793259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10213,6 +10216,7 @@ MonoBehaviour:
   animator: {fileID: 1797071856}
   spriteRenderer: {fileID: 1797071857}
   colliderr: {fileID: 1797071854}
+  playerMoveset: {fileID: 0}
 --- !u!95 &1797071856
 Animator:
   serializedVersion: 7
@@ -10669,6 +10673,7 @@ MonoBehaviour:
   animator: {fileID: 2037958048}
   spriteRenderer: {fileID: 2037958049}
   colliderr: {fileID: 2037958046}
+  playerMoveset: {fileID: 595355457}
 --- !u!95 &2037958048
 Animator:
   serializedVersion: 7
@@ -11421,10 +11426,6 @@ CompositeCollider2D:
         Y: -190000000
       - X: 80000000
         Y: -188124992
-      - X: 90000000
-        Y: -188124992
-      - X: 90000000
-        Y: -181875008
       - X: 80000000
         Y: -181875008
       - X: 75937504
@@ -12043,10 +12044,8 @@ CompositeCollider2D:
       - {x: 7.5625, y: -19.999989}
       - {x: 7.5625296, y: -19}
       - {x: 7.5937552, y: -18.999998}
-      - {x: 8.000006, y: -18.8125}
-      - {x: 9, y: -18.812471}
-      - {x: 8.99997, y: -18.187502}
-      - {x: 7.999995, y: -18.1875}
+      - {x: 8, y: -18.81248}
+      - {x: 7.9999843, y: -18.187492}
       - {x: 7.5937448, y: -18}
       - {x: 7.5625, y: -17.999971}
       - {x: 7.5625296, y: -14}
@@ -12618,16 +12617,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 22
       m_TileSpriteIndex: 22
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 8, y: -19, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15363,7 +15352,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 595dd747d8f5ce74a96e5978f2861083, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: a6f1975cc3178874d8fdf9d7c132a163, type: 2}
-  - m_RefCount: 52
+  - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: a88af2786c033834d9f8883db9fba631, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 8704ff39d5ba3a143b2367208da41e12, type: 2}
@@ -15414,7 +15403,7 @@ Tilemap:
     m_Data: {fileID: 1880704944, guid: a7a56b90942e85f41beb99114d0ef792, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -2100874546, guid: a7a56b90942e85f41beb99114d0ef792, type: 3}
-  - m_RefCount: 52
+  - m_RefCount: 51
     m_Data: {fileID: 483717527, guid: a7a56b90942e85f41beb99114d0ef792, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -2079175348, guid: 60e03bfe7ecc9354dbf54f1f4b1aaef0, type: 3}
@@ -15437,7 +15426,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1345685601, guid: 60e03bfe7ecc9354dbf54f1f4b1aaef0, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 298
+  - m_RefCount: 297
     m_Data:
       e00: 1
       e01: 0
@@ -15456,7 +15445,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 298
+  - m_RefCount: 297
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
