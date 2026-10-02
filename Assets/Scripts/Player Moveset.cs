@@ -9,6 +9,7 @@ public class PlayerMoveset : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Timer timer;
     public bool BoosterActive;
+    public bool BoosterActive2 = false;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerMoveset : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
+        
         rb.linearVelocity = new Vector2(moveHorizontal, moveVertical) * speed;
         spriteRenderer.flipX = rb.linearVelocity.x < 0;
 
